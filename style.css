@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Andale Mono, monospace;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 1rem;
+    background: #355C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.todo-app {
+    width: 100%;
+    max-width: 35rem;
+    margin: 10rem auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: #f0f8ff;
+    box-shadow: 0px 10px 15px 0px rgb(36, 36, 36);
+}
+
+.todo-app h1 {
+    color: #294864;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 2rem;
+    padding: 1rem 1.5rem;
+    margin-bottom: 3rem;
+    background-color: rgb(227, 227, 227);
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 0.2rem 1rem;
+    border-radius: 2rem;
+    background-color: #ccbfc2;
+    color: #6d6466;
+    cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 0rem 1rem 2rem;
+    flex-grow: 4;
+}
+
+ul li p, ul li span {
+    cursor: pointer;
+}
